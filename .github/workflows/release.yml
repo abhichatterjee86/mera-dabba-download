@@ -1,0 +1,30 @@
+name: Publish APK
+
+# When release.json changes, download that APK from expo.dev and publish it as the latest release.
+# The website links to releases/latest/download/mera-dabba.apk, so it always gets the newest one.
+on:
+  push:
+    branches: [main]
+    paths: [release.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Download and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          URL=$(jq -r .url release.json); VERSION=$(jq -r .version release.json); SHA=$(jq -r .sha256 release.json)
+          curl -fsSL "$URL" -o mera-dabba.apk
+          echo "$SHA  mera-dabba.apk" | sha256sum -c -
+          echo "$SHA  mera-dabba.apk" > mera-dabba.apk.sha256
+          printf '%s\n\n%s\n\n%s\n' "$(jq -r .notes release.json)" \
+            "How to install: https://meradabba.app/download" "SHA-256: $SHA" > notes.md
+          gh release create "v$VERSION" mera-dabba.apk mera-dabba.apk.sha256 \
+            --title "Mera Dabba $VERSION" --notes-file notes.md --latest
