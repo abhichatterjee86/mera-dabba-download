@@ -24,7 +24,7 @@ jobs:
         run: |
           VERSION=$(jq -r .version release.json); SHA=$(jq -r .sha256 release.json); FILE=$(jq -r '.file // empty' release.json)
           if [ -n "$FILE" ]; then
-            cp "$FILE" mera-dabba.apk
+            [ "$FILE" = mera-dabba.apk ] || cp "$FILE" mera-dabba.apk
           else
             curl -fsSL "$(jq -r .url release.json)" -o mera-dabba.apk
           fi
