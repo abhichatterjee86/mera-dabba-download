@@ -1,6 +1,6 @@
 {
   "version": "1.6.0",
   "file": "mera-dabba.apk",
-  "sha256": "0157b9af3acb3582c1f84f2284720413242c619ead6902a4d1d724c844585989",
-  "notes": "New: copy anything in another app, open Mera Dabba and tap Paste - Dabbu saves and sorts it. Also: a more colourful dark theme, a simpler Me page, tell Dabbu 1 thing you keep forgetting, Where I kept it, Recently deleted, Download my dabba and a safety page."
+  "sha256": "6db4a364b6c03fc3eb5088e8687cfc30fbf1cbd6484f1159726917f5e0bd1dfa",
+  "notes": "New: smarter sorting - plain photos (trees, pets, people, your things) now go to the new Photos & Memories section, and Dabbu asks you when he is not sure. Copy anything in another app, open Mera Dabba and tap Paste. A more colourful dark theme. Language fixes in all 10 Indian languages."
 }
