@@ -1,6 +1,6 @@
 {
   "version": "1.6.0",
   "file": "mera-dabba.apk",
-  "sha256": "6db4a364b6c03fc3eb5088e8687cfc30fbf1cbd6484f1159726917f5e0bd1dfa",
-  "notes": "New: smarter sorting - plain photos (trees, pets, people, your things) now go to the new Photos & Memories section, and Dabbu asks you when he is not sure. Copy anything in another app, open Mera Dabba and tap Paste. A more colourful dark theme. Language fixes in all 10 Indian languages."
+  "sha256": "3c5245b9e36c6d8f0d5a1010270aa4228a4e5c66f6aca140670d346510945f80",
+  "notes": "New: every Indian language now uses everyday words (no English words in Bengali, Hindi, Telugu... letters), words are never cut off, search understands other spellings and word endings, and speaking is understood much better - Dabbu listens again and fixes the words."
 }
