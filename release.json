@@ -1,6 +1,6 @@
 {
   "version": "1.6.0",
   "file": "mera-dabba.apk",
-  "sha256": "3c5245b9e36c6d8f0d5a1010270aa4228a4e5c66f6aca140670d346510945f80",
-  "notes": "New: every Indian language now uses everyday words (no English words in Bengali, Hindi, Telugu... letters), words are never cut off, search understands other spellings and word endings, and speaking is understood much better - Dabbu listens again and fixes the words."
+  "sha256": "4b7e28b9de46fc544c6f6c8cae1072616de4d896905b66ef69c4a4d85e61d476",
+  "notes": "New: \"Why Mera Dabba?\" shows in 3 lines how it helps you, a \"Not now\" button on the login screen, clearer icons, easier example screens and many small fixes from tester feedback."
 }
